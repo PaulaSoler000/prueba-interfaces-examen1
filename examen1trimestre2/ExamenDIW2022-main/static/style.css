@@ -3,6 +3,45 @@ h1{
     font-family: 'Fredoka One', cursive;
 }
 
+body{
+    overflow-x: hidden;
+    margin: 0;
+    background: rgb(78,71,59);
+    background: linear-gradient(90deg, rgba(78,71,59,1) 0%, rgba(168,125,44,1) 35%, rgba(229,255,255,1) 100%);
+}
+
+#contenedorContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    min-width: 100vw;
+    min-height: 100vh;
+  
+    background: rgb(78,71,59);
+    background: linear-gradient(90deg, rgba(78,71,59,1) 0%, rgba(168,125,44,1) 35%, rgba(229,255,255,1) 100%);
+  }
+
+  .home-content {
+   
+    width: 100%;
+    max-width: 1000px;
+    min-width: 355px;
+    margin-right: 10rem;
+    padding: 30px 30px 60px 30px;
+    background-color: white;
+   
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    box-sizing: border-box;
+    
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+
 #data_table, td {
     margin: auto;
     border-collapse: collapse !important;
@@ -28,4 +67,50 @@ h1{
     background-color: orange;
     font-family: 'Fredoka One', cursive;
   
+  }
+
+  div:has(div.modal) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(204, 204, 204, 0.5333333333);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    padding: 0;
+  }
+  div:has(div.modal):has(div.modal.show) {
+    opacity: 1;
+    z-index: 1;
+  }
+  div:has(div.modal) div.modal {
+    width: 25rem;
+    padding: 0;
+    border-radius: 2px;
+    background-color: bisque;
+    box-shadow: 0 0 3px black;
+  }
+  div:has(div.modal) div.modal header {
+    padding: 1rem;
+    border-bottom: solid 1px black;
+    text-align: center;
+  }
+  div:has(div.modal) div.modal main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div:has(div.modal) div.modal footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
