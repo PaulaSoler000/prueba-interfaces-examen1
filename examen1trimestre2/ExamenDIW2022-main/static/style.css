@@ -1,5 +1,31 @@
 /*# sourceMappingURL=style.css.map */
-h1, th{
+h1{
     font-family: 'Fredoka One', cursive;
 }
 
+#data_table, td {
+    margin: auto;
+    border-collapse: collapse !important;
+    border-style: hidden; 
+    border: 1px solid orange;
+    font-size:16px;
+    
+    text-align: center;
+  }
+
+  tr:hover{
+    background-color: orange;
+
+  }
+
+  #data_table th, td{
+    border: 1px solid orange;
+    color: black;
+    padding: 10px;
+  }
+  
+  #data_table th {
+    background-color: orange;
+    font-family: 'Fredoka One', cursive;
+  
+  }
