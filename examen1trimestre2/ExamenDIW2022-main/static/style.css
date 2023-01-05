@@ -95,4 +95,16 @@ body{
     margin-bottom: 2%;
   }
 
+  #hombre{
+    background-color: blue;
+    color: white;
+  }
   
+  #mujer{
+    background-color: pink;
+    color: white;
+  }
+  #actividad{
+    background-color: grey;
+    color: white;
+  }
