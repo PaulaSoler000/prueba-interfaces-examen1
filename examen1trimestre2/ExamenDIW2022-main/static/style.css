@@ -108,3 +108,12 @@ body{
     background-color: grey;
     color: white;
   }
+
+  dialog{
+    border: none;
+  }
+
+  dialog::backdrop {
+    background: rgb(78,71,59);
+    background: linear-gradient(90deg, rgba(78,71,59,1) 0%, rgba(168,125,44,1) 35%, rgba(229,255,255,1) 100%);
+}
