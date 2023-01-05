@@ -21,97 +21,143 @@
 
     <div id="contenedorContacto">
 
-    <div class="home-content"> 
+        <div class="home-content"> 
 
-    <div id="gris1">
-    <h1>Clientes</h1>
-    </div>
-
-    <table id="data_table">
-        <tr>
-            <th>Nombre</th>
-            <th>Sexo</th>
-            <th>Edad</th>
-            <th>Altura</th>
-            <th>Peso</th>
-            <th>Actividad</th>
-            <th>IM Basal</th>
-            <th>Calorías necesarias</th>
-            
-        </tr>
-
-        <tr >
-            <td >Jose Carlos Lara</td>
-            <td id="hombre">Hombre</td>
-            <td >46</td>
-            <td >187</td>
-            <td>89</td>
-            <td id="actividad">moderada</td>
-            <td>1333kCal</td>
-            <td>1712kCal</td>
-        </tr>
-        <tr >
-            <td >Jose Carlos Lara</td>
-            <td id="hombre">Hombre</td>
-            <td >46</td>
-            <td >187</td>
-            <td>89</td>
-            <td id="actividad">moderada</td>
-            <td>1333kCal</td>
-            <td>1712kCal</td>
-        </tr>
-        <tr >
-            <td >Jose Carlos Lara</td>
-            <td id="mujer">Mujer</td>
-            <td >46</td>
-            <td >187</td>
-            <td>89</td>
-            <td id="actividad">alta</td>
-            <td>1333kCal</td>
-            <td>1712kCal</td>
-        </tr>
-        <tr >
-            <td >Jose Carlos Lara</td>
-            <td id="hombre">Hombre</td>
-            <td >46</td>
-            <td >187</td>
-            <td>89</td>
-            <td id="actividad">moderada</td>
-            <td>1333kCal</td>
-            <td>1712kCal</td>
-        </tr>
-        <tr >
-            <td >Jose Carlos Lara</td>
-            <td id="hombre">Hombre</td>
-            <td >46</td>
-            <td >187</td>
-            <td>89</td>
-            <td id="actividad">moderada</td>
-            <td>1333kCal</td>
-            <td>1712kCal</td>
-        </tr>
-    
-   
-    </table>
-
-    <button type="button" data-toggle="modal" data-dialog="#login" >Añadir</button> 
-
-    <div id="gris2">Francisco </div>
-    </div>
-
-    </div>
-
-    <li><a href="#" data-dialog="#login">Login</a></li>
-
-    <div>
-        <div id="login" class="modal">
-            <header>Inicio de Sesión</header>
-            <main>
-                <input name="nombre" />
-            </main>
-            <footer> <button data-dialog="#login" class="aceptar">Aceptar</button> </footer>
+        <div id="gris1">
+            <h1 id="textcenter">Clientes</h1>
         </div>
+
+
+        <div id="blanco">
+        <table class="data_table">
+            <tr>
+                <th>Nombre</th>
+                <th>Sexo</th>
+                <th>Edad</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Actividad</th>
+                <th>IM Basal</th>
+                <th>Calorías necesarias</th>
+                
+            </tr>
+
+            <tr >
+                <td >Jose Carlos Lara</td>
+                <td id="hombre">Hombre</td>
+                <td >46</td>
+                <td >187</td>
+                <td>89</td>
+                <td id="actividad">moderada</td>
+                <td>1333kCal</td>
+                <td>1712kCal</td>
+            </tr>
+
+            <tr >
+                <td >Jose Carlos Lara</td>
+                <td id="hombre">Hombre</td>
+                <td >46</td>
+                <td >187</td>
+                <td>89</td>
+                <td id="actividad">moderada</td>
+                <td>1333kCal</td>
+                <td>1712kCal</td>
+            </tr>
+
+            <tr >
+                <td >Jose Carlos Lara</td>
+                <td id="mujer">Mujer</td>
+                <td >46</td>
+                <td >187</td>
+                <td>89</td>
+                <td id="actividad">alta</td>
+                <td>1333kCal</td>
+                <td>1712kCal</td>
+            </tr>
+
+            <tr >
+                <td >Jose Carlos Lara</td>
+                <td id="hombre">Hombre</td>
+                <td >46</td>
+                <td >187</td>
+                <td>89</td>
+                <td id="actividad">moderada</td>
+                <td>1333kCal</td>
+                <td>1712kCal</td>
+            </tr>
+
+            <tr >
+                <td >Jose Carlos Lara</td>
+                <td id="hombre">Hombre</td>
+                <td >46</td>
+                <td >187</td>
+                <td>89</td>
+                <td id="actividad">moderada</td>
+                <td>1333kCal</td>
+                <td>1712kCal</td>
+            </tr>
+   
+         </table>
+
+        <button onclick="window.modal1.showModal();">Añadir</button>
+        
+        </div>
+
+    <div id="gris2">
+        <p id="textcenter">Francisco</p>
     </div>
+
+    
+
+        <dialog id="modal1">
+
+            <div id="gris1">
+                <h1>Nuevo cliente</h1>
+            </div>
+
+            <div id="blanco">
+                <form action="" id="form_new_client" method="get" class="flex">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label>Sexo:</label>
+                        <div class="group">
+                            <input type="radio" name="sexo" id="sexo_hombre" value="hombre">
+                            <label for="sexo_hombre">Hombre</label>
+                            <input type="radio" name="sexo" id="sexo_mujer" value="mujer" checked>
+                            <label for="sexo_mujer">Mujer</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" value="20" min="15" max="99">
+                    </div>
+                    <div>
+                        <label for="altura">Altura (cm):</label>
+                        <input type="number" id="altura" name="altura" value="165" min="130" max="240">
+                    </div>
+                    <div>
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" id="peso" name="peso" value="65" min="45" max="145">
+                    </div>
+                    <div>
+                        <label for="actividad">Nombre:</label>
+                        <select id="actividad" name="actividad">
+                            <option value="Sedentaria">Suave o sedentaria</option>
+                            <option value="Moderada">Moderada</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+           
+            <div id="gris2">
+                <button onclick="window.modal1.close();">Añadir Nuevo</button>
+                <button onclick="window.modal1.close();">Cerrar</button>
+            </div>
+         </dialog>
 
     <script src="static/app.js"></script>
 
