@@ -24,7 +24,7 @@
         <div class="home-content"> 
 
         <div id="gris1">
-            <h1 id="textcenter">Clientes</h1>
+            <h1>Clientes</h1>
         </div>
 
 
@@ -99,24 +99,24 @@
    
          </table>
 
-        <button onclick="window.modal1.showModal();">Añadir</button>
+        <button class="boton" onclick="window.modal.showModal();">Añadir cliente</button>
         
         </div>
 
     <div id="gris2">
-        <p id="textcenter">Francisco</p>
+        <h4>Francisco</h4>
     </div>
 
     
 
-        <dialog id="modal1">
+        <dialog id="modal">
 
             <div id="gris1">
                 <h1>Nuevo cliente</h1>
             </div>
 
             <div id="blanco">
-                <form action="" id="form_new_client" method="get" class="flex">
+                <form action="" id="form_new_client" method="get" class="formu">
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre">
@@ -154,8 +154,8 @@
             </div>
            
             <div id="gris2">
-                <button onclick="window.modal1.close();">Añadir Nuevo</button>
-                <button onclick="window.modal1.close();">Cerrar</button>
+                <button class="boton" onclick="window.modal.close();">Añadir Nuevo</button>
+                <button class="botongris" onclick="window.modal.close();">Volver atrás</button>
             </div>
          </dialog>
 

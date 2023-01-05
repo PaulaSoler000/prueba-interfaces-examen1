@@ -1,6 +1,7 @@
 /*# sourceMappingURL=style.css.map */
-h1{
+h1, h4{
     font-family: 'Fredoka One', cursive;
+    text-align: center;
 }
 
 body{
@@ -25,11 +26,14 @@ body{
     width: 100%;
     max-width: 800px;
     min-width: 355px;
-    height: 300px;
+    height: 250px;
     margin-right: 10rem;
     padding: 30px 30px 60px 30px;
     background-color: white;
-  
+    border-left:2px solid black;
+    border-right:2px solid black;
+    text-align: center;
+
   }
 
   #gris1{
@@ -38,8 +42,10 @@ body{
     min-width: 355px;
     height: 5px;
     margin-right: 10rem;
-    padding: 30px 30px 60px 30px;
+    padding: 5px 30px 60px 30px;
     background-color: lightgray;
+    border:2px solid black;
+    border-radius: 20px 20px 0px 0px;
 
   }
 
@@ -49,10 +55,14 @@ body{
     min-width: 355px;
     height: 5px;
     margin-right: 10rem;
-    padding: 30px 30px 60px 30px;
+    padding: 5px 30px 60px 30px;
     background-color: lightgray;
+    border:2px solid black;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
 
   }
+
 
 .data_table, td {
     margin: auto;
@@ -81,8 +91,22 @@ body{
   
   }
 
-  button{
+  .boton{
     background-color: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .botongris{
+    background-color: grey;
     border: none;
     color: white;
     padding: 10px;
@@ -97,23 +121,36 @@ body{
 
   #hombre{
     background-color: blue;
+    border-radius: 8px;
     color: white;
   }
   
   #mujer{
     background-color: pink;
+    border-radius: 8px;
     color: white;
   }
   #actividad{
     background-color: grey;
+    border-radius: 8px;
     color: white;
   }
 
   dialog{
+    max-width: 650px;
+    padding: 0px 0px;
     border: none;
+    border-radius: 20px;
   }
 
   dialog::backdrop {
     background: rgb(78,71,59);
     background: linear-gradient(90deg, rgba(78,71,59,1) 0%, rgba(168,125,44,1) 35%, rgba(229,255,255,1) 100%);
+}
+
+.formu{
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+
 }
